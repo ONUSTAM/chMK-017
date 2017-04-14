@@ -1,0 +1,102 @@
+.btn.re,
+.btn-group.bootstrap-select.re .dropdown-toggle {
+  border-radius: 2px;
+  border: none!important;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  outline: 2px solid rgba(255,255,255, 0.0);
+  outline-offset: -2px!important;
+  // transition: all .27s ease;
+  transition: all 0.17s ease;
+
+  &:hover {
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+  }
+}
+
+
+.btn.re:focus,
+.btn.re.focus,
+.btn.re:active:focus,
+.btn.re:active.focus,
+.btn.re.active:focus,
+.btn.re.active.focus,
+.components-list .bootstrap-select>.dropdown-toggle:focus {
+  outline: 2px solid rgba(255,255,255, 0.5)!important;
+  outline-offset: -2px!important;
+}
+
+.btn.re:active:hover,
+.btn.re:active:focus,
+.btn.re:active.focus,
+.btn.re.active:hover,
+.btn.re.active:hover,
+.btn.re.active:focus,
+.btn.re.focus:hover,
+.btn.re:focus:hover,
+.open > .btn.re.dropdown-toggle:hover,
+.open > .btn.re.dropdown-toggle:focus,
+.open > .btn.re.dropdown-toggle.focus {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.btn.re:active,
+.btn.re.active,
+.btn.re:active:hover,
+.btn.re:active:focus,
+.btn.re:active.focus,
+.btn.re.active:hover,
+.btn.re.active:hover,
+.btn.re.active:focus,
+.btn.re.focus:hover,
+.btn.re:focus:hover,
+.open > .btn.re.dropdown-toggle:hover,
+.open > .btn.re.dropdown-toggle:focus,
+.open > .btn.re.dropdown-toggle.focus {
+  -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.14), 0 0px 0px -2px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.12)!important;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.14), 0 0px 0px -2px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.12)!important;
+}
+
+
+.btn-group.bootstrap-select.btn-group.re {
+  .dropdown-menu {
+    background-color: #efefef;
+  }
+  .dropdown-menu.open {
+    border-radius: 2px;
+    border: 1px solid #e5e5e5;
+
+    // .dropdown-menu.inner {}
+  }
+
+  li {
+    padding: 0px 4px;
+
+    a {
+      border: 2px solid #ccc;
+      border: 2px solid rgba(255, 255, 255, 0.00);
+      border-radius: 4px;
+      outline: 2px solid rgba(255,255,255, 0.0)!important;
+      outline-offset: -2px!important;
+      transition: all .28s ease-in-out;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.15);
+        border: 2px solid rgba(255, 255, 255, .8);
+      }
+
+      &:focus {
+        background-color: rgba(0, 0, 0, 0.15);
+        outline: 2px solid rgba(255,255,255, 0.5)!important;
+        outline-offset: -2px!important;
+      }
+    }
+  }
+}
+
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn).re {
+  width: auto;
+}

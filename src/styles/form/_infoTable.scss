@@ -1,0 +1,148 @@
+
+/*infoTable*/
+
+.tableList {
+
+  .text-danger.lbl {
+    font-weight: normal;
+    font-size: .9em;
+  }
+
+  &.t2 ul {
+    border: 1px solid #ccc;
+    .td {
+      border-left: 1px solid #ccc;
+    }
+  }
+
+  .mbw-sm {
+    width: 100px;
+  }
+
+  ul {
+    // border: solid 1px #ddd;
+    border-bottom: none;
+    display: inline-block;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    width: 100%;
+
+    li {
+      border-bottom: solid 1px #ddd;
+      padding: 0;
+      &:last-child {
+        // border-bottom: none;
+      }
+
+      .th {
+        // background-color: lighten($theme, 25%);
+        font-size: 13px;
+        font-weight: bold;
+        padding: 12px;
+        vertical-align: top;
+      }
+      .td {
+        padding: 12px;
+
+        $space: 0px;
+        &.row {
+          margin-left:  $space*-1;
+          margin-right: $space*-1;
+
+          > div {
+            // padding-right: $space;
+            padding-right: 10px;
+            padding-left:  $space;
+            padding-bottom: $space;
+            padding-top:    $space;
+          }
+        }
+
+      }
+    }
+  }
+
+  $small:  "only screen and (max-width:640px)";
+  $middle: "only screen and (min-width:641px)";
+
+  @media #{$small} {
+
+    li {
+      display: block;
+      width: 100%;
+
+      .th {}
+      .td {}
+    }
+  }
+  @media #{$middle} {
+
+    li {
+      display: table;
+      width: 100%;
+
+      .th {
+        display: table-cell;
+        width: 30%;
+
+        >span {
+          display: block;
+        }
+        >small {
+          display: block;
+        }
+
+        &.tt {
+          text-align: right;
+        }
+      }
+      .td {
+        display: table-cell;
+      }
+    }
+  }
+
+}
+.table-list-outer {
+  padding: 0;
+}
+.table.table-list {
+  > thead > tr > th,
+  > thead > tr > td,
+  > tbody > tr > th,
+  > tbody > tr > td,
+  > tfoot > tr > th,
+  > tfoot > tr > td {
+    padding: 2px 4px;
+  }
+
+  > thead > tr > th {
+    text-align: center;
+  }
+
+}
+.table-panel {
+  border: 1px solid #ddd;
+
+  .table > thead > tr > th,
+  .table > thead > tr > td,
+  .table > tbody > tr > th,
+  .table > tbody > tr > td,
+  .table > tfoot > tr > th,
+  .table > tfoot > tr > td {
+    padding: 2px 4px 2px 2px;
+  }
+
+  .table > tbody > tr > th {
+    background-color: #efefef;
+  }
+
+  .list-inline {
+    margin-bottom: 0;
+  }
+
+  .btn {
+    padding: 3px 12px 4px;
+  }
+}

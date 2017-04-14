@@ -1,0 +1,16 @@
+.markLine {
+  display: inline-block;
+  position: relative;
+
+  &:after {
+    background-color: #fff000;
+    content: '';
+    height: 44%;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+}

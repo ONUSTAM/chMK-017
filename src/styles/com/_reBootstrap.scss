@@ -1,0 +1,81 @@
+
+// グリッドの幅を調整します
+$space: 8px;
+p {
+  margin-bottom: 4px;
+}
+a {
+  color: #0089ff;
+
+  &:hover,
+  &:focus {
+    color: #61b6ff;
+  }
+}
+
+&.row {
+  margin-left: $space*-1;
+  margin-right: $space*-1;
+
+  > li, > div, > p {
+    padding-right: $space;
+    padding-left: $space;
+  }
+}
+.btn {
+  padding: 6px 12px 7px;
+}
+
+.btn:focus,
+.btn.focus,
+.btn:active:focus,
+.btn:active.focus,
+.btn.active:focus,
+.btn.active.focus {
+  outline: 2px auto -webkit-focus-ring-color;
+  outline-offset: -3px;
+}
+
+.btn-default {
+  background-color: #fff;
+  &:hover {
+    background-color: #fff;
+  }
+}
+.btn-theme {
+  background-color: $theme-color;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+  &:focus {
+    color: #fff;
+  }
+}
+.btn-default {
+  background-color: $color-default;
+}
+.btn-info {
+  background-color: $color-info;
+}
+.btn-primary {
+  background-color: $color-primary;
+}
+.btn-success {
+  background-color: $color-success;
+}
+.btn-warning {
+  background-color: $color-warning;
+}
+.btn-danger {
+  background-color: $color-danger;
+}
+
+pre.re {
+  background-color: #23282d;
+  border: none;
+  border-radius: 2px;
+  color: #00ff8d;
+  margin-bottom: 0;
+  text-shadow: 0px 0px 16px #00ff8d;
+}

@@ -1,0 +1,18 @@
+.whiteframe__inner {
+  padding: 15px;
+}
+
+.whiteframe__header {
+  background-color: #d2d8ff;
+  border-bottom: solid 1px #ddd;
+  border-top: solid 1px #ddd;
+  color: #666;
+  margin-top: 16px;
+  padding: 8px;
+
+  small{
+    display: block;
+    padding: $space;
+    border-top: 1px solid rgba(0,0,0,0.1)
+  }
+}

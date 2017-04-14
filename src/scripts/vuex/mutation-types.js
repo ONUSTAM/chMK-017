@@ -1,0 +1,5 @@
+export const INITIALIZE = 'INITIALIZE'
+export const MENU = 'MENU'
+export const GITHUB_LIST = 'GITHUB_LIST'
+export const FAIL_MESSAGE = 'FAIL_MESSAGE'
+export const VALIDATION_SAMPLE = 'VALIDATION_SAMPLE'

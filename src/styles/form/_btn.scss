@@ -1,0 +1,33 @@
+/*-------------------------------
+BTN
+---------------------------------*/
+/*original*/
+.btnL{
+  width: 250px;
+  padding: 15px;
+  font-size:28px;
+}
+.btnM{
+  width: 100%;
+  max-width: 250px;
+  margin: 0;
+  padding: 10px;
+  font-size:20px;
+}
+
+/*--------------------------------
+media query
+---------------------------------*/
+//SP
+$small:  "only screen and (max-width:640px)";
+//PC
+$medium:  "only screen and (min-width:641px)";
+
+.btnWrap{
+  @media #{$small} {
+    .text-right,.text-left{
+      text-align: center !important;
+      margin-bottom: 20px;
+    }
+  }
+}

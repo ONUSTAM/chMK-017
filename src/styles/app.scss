@@ -1,0 +1,29 @@
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+html, body {
+  -webkit-font-smoothing: antialiased;
+  font-family: Menlo, Monaco, Consolas, "Courier New", “ヒラギノ角ゴ ProN W3”, “Hiragino Kaku Gothic ProN”, “メイリオ”, Meiryo, sans-serif;
+}
+@import "./com/valiables";
+@import "./com/reBootstrap";
+// @import "./com/reMaterialDesign";
+@import "./form/inputText";
+@import "./form/infoTable";
+@import "./form/navBarFixTop";
+@import "./form/tableEstimate";
+@import "./form/whiteframe";
+@import "./form/btn";
+@import "./form/button";
+@import "./form/navTab";
+@import "./form/markLine";
+@import "./layout/adjust";
+
+
+// ※付きテキスト
+.dspTable {
+  display: table;
+  > small, span, div {
+    display: table-cell;
+  }
+}
